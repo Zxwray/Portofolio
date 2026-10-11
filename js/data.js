@@ -1,17 +1,12 @@
-/* ============================================================
-   EDIT THIS FILE to change content. Image paths that don't exist yet
-   show a placeholder with the exact file name to add.
-   ============================================================ */
-
 const SITE = {
-  heroPhoto: "assets/img/profile/hero.png",   // portrait 3:4, half-body, slight angle, hand near cheek, warm background
-  aboutPhoto: "assets/img/profile/about.jpeg",  // portrait 3:4
+  heroPhoto: "assets/img/profile/hero.png",
+  aboutPhoto: "assets/img/profile/about.jpeg",
   roles: ["Frontend Developer", "UI/UX Designer", "Content Creator", "Video Editor", "Student Leader"],
   skillsMarquee: ["C++", "Python", "PHP", "HTML", "CSS", "JavaScript", "UI/UX Design", "Video Editing", "Instagram Design", "Roblox Studio", "Leadership", "Teamwork"]
 };
 
 /* ---------------- PROJECTS ---------------- */
-/* ratio: "desktop" (landscape screenshots) or "mobile" (portrait phone screenshots) */
+
 const PROJECTS = [
   {
     id: "cakrawala-pandawa",
@@ -20,7 +15,7 @@ const PROJECTS = [
     type: "E-Learning Platform",
     role: "Frontend Developer (Student, Admin, Treasurer & Library modules)",
     ratio: "desktop",
-    link: "",   // add live URL if any, e.g. "https://..."
+    link: "",
     stack: ["HTML", "CSS", "JavaScript", "PHP"],
     desc: "An e-learning website for school. Students generate a personal QR code and teachers scan it, so attendance is recorded in the system automatically; teachers also open the attendance window. A treasurer role enters tuition (SPP) bills for students, and the system automatically compiles the bookkeeping into a downloadable .csv file. Students track their bills and payment history, and submit book loan requests online. Admins manage teacher accounts, student accounts and classes. The library module lets librarians add and edit books and approve borrowing requests.",
     note: "Team project. I built the frontend for the Student, Admin, Treasurer and Library modules; the Teacher module was built by a teammate.",
@@ -45,7 +40,7 @@ const PROJECTS = [
     type: "PPK Ormawa Documentation Website",
     role: "Freelance Web Developer",
     ratio: "desktop",
-    link: "https://lumbungharmoni.netlify.app/",   // <-- put your hosted link here
+    link: "https://lumbungharmoni.netlify.app/",
     stack: ["HTML", "CSS", "JavaScript"],
     desc: "A documentation website for the PPK Ormawa program “Lumbung Harmoni”, showcasing the activities and progress of the program. Live and publicly hosted.",
     note: "Commissioned freelance project - I built and delivered the website; I was not a participant of the PPK Ormawa program itself.",
@@ -55,7 +50,6 @@ const PROJECTS = [
       { name: "Activity Documentation", desc: "Documentation photos from the field.", img: "assets/img/projects/lumbung-harmoni/03-activities.png" },
       { name: "Release Media", desc: "News and activity documentation for the Lumbung Harmoni Program.", img: "assets/img/projects/lumbung-harmoni/04-media.png" },
       { name: "Personal Information", desc: "Lumbung Harmoni personal information", img: "assets/img/projects/lumbung-harmoni/05-information.png" }
-      /* Edit / add features to match the real site */
     ]
   },
   {
@@ -86,7 +80,7 @@ const PROJECTS = [
   }
 ];
 
-/* ---------------- ROBLOX (4–5 screenshots) ---------------- */
+/* ---------------- ROBLOX ---------------- */
 const ROBLOX = {
   desc: "A Roblox map that I designed and scripted entirely on my own. I built the environment and layout in Roblox Studio, then wrote the gameplay logic in Lua.",
   shots: [
@@ -98,7 +92,7 @@ const ROBLOX = {
   ]
 };
 
-/* ---------------- INSTAGRAM DESIGNS (4:5 posts) ---------------- */
+/* ---------------- INSTAGRAM DESIGNS ---------------- */
 const DESIGNS = [
   { cat: "Book Cover", ratio: "2:3", img: "assets/img/design/01.png", caption: "Design 01", link: "https://canva.link/gst5mlb1rzwdihr" },
   { cat: "Instagram Feed", ratio: "4:5", img: "assets/img/design/02.png", caption: "Design 02", link: "" },
@@ -111,8 +105,7 @@ const DESIGNS = [
 
 ];
 
-/* ---------------- VIDEO EDITS ----------------
-   Use either a local file ("src") or a YouTube video id ("yt"). */
+/* ---------------- VIDEO EDITS ----------------*/
 const VIDEOS = [
   { title: "Clipper", platform: "TikTok", link: "https://www.tiktok.com/@d4maxxx/video/7686001444893281556" },
   { title: "Mini vlog education", platform: "TikTok", link: "https://www.tiktok.com/@jejakpandes/video/7656087323913833736" },
@@ -120,7 +113,6 @@ const VIDEOS = [
 ];
 
 /* ---------------- JOURNEY ---------------- */
-/* type: edu | work | org | event */
 const JOURNEY = [
   { year: "2020", type: "edu", title: "SMAN 1 Rembang - Science Track", where: "2020 – 2023", desc: "Started high school in the Mathematics & Natural Sciences track." },
   { year: "2022", type: "work", title: "Computer Admin - OSIS MPK", where: "High school · 2022", desc: "Managed and monitored the election website used to choose the OSIS chair." },
