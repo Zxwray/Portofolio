@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wini Dimas Muharromsyah - Portfolio</title>
+  <meta name="description"
+    content="Informatics student, frontend developer, content creator and student leader based in Yogyakarta.">
+  <meta name="theme-color" content="#0b0907">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="progress"></div>
+  <div class="cursor" aria-hidden="true"><span class="dot"></span><span class="ring"></span></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">WDM</span>
+      <div class="loader-bar"><i></i></div>
+      <span class="loader-count">0</span>
+    </div>
+  </div>
+
+  <div class="blob b1" data-speed="0.08"></div>
+  <div class="blob b2" data-speed="-0.06"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo">wdm<span>.</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#creative">Creative</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact" class="pill magnetic">Let's talk</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hello line"><span>Hi, I'm</span></p>
+        <h1 class="name">
+          <span class="line"><span>Wini Dimas</span></span>
+          <span class="line outline"><span>Muharromsyah</span></span>
+        </h1>
+        <p class="role">I'm a <span id="typed"></span><span class="caret">|</span></p>
+        <p class="lead" data-reveal>
+          7th-semester Informatics student at UPN “Veteran” Yogyakarta. I build clean, friendly
+          interfaces, craft digital content, and lead student communities.
+        </p>
+        <div class="cta" data-reveal style="--d:.15s">
+          <a href="#projects" class="btn primary magnetic">See my work <i>→</i></a>
+          <a href="assets/cv/Wini-Dimas-Muharromsyah-CV.pdf" class="btn ghost magnetic" download>Download CV
+            <i>↓</i></a>
+        </div>
+        <div class="stats" data-reveal style="--d:.3s">
+          <div><b data-count="4">0</b><span>Showcase projects</span></div>
+          <div><b data-count="4">0</b><span>Organizations</span></div>
+          <div><b data-count="8" data-plus>0</b><span>Events organized</span></div>
+        </div>
+      </div>
+
+      <div class="hero-photo" data-tilt>
+        <div class="frame" id="heroPhoto"></div>
+        <span class="chip c1">Frontend</span>
+        <span class="chip c2">UI/UX</span>
+        <span class="chip c3">Content</span>
+        <span class="chip c4">Leadership</span>
+        <div class="ring-deco"></div>
+      </div>
+
+      <a href="#about" class="scroll-hint"><i></i>scroll</a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track" id="marquee"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-photo" data-reveal="left">
+        <div class="frame" id="aboutPhoto"></div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow" data-reveal>About me</p>
+        <h2 class="h2" data-reveal>Technology, content, and <em>people</em>.</h2>
+        <p data-reveal>
+          I'm an Informatics student with a strong interest in technology and digital content.
+          I'm active in campus organizations and events, with hands-on experience from
+          internships, freelance work, and volunteering.
+        </p>
+        <p data-reveal>
+          On the technical side I work with C++, Python and PHP and build frontends and UI/UX designs.
+          Outside code, I design for Instagram, edit videos, and build worlds on Roblox.
+          I communicate clearly, work well in teams, and manage my time carefully.
+        </p>
+        <ul class="skill-cols" data-reveal>
+          <li>
+            <h4>Technical</h4><span>C++</span><span>Python</span><span>PHP</span><span>UI/UX
+              Design</span><span>Microsoft Office</span><span>Google Form &amp; Sheets</span>
+          </li>
+          <li>
+            <h4>Soft skills</h4><span>Teamwork</span><span>Time management</span><span>Leadership</span><span>Critical
+              thinking</span><span>Communication</span>
+          </li>
+          <li>
+            <h4>Languages</h4><span>Indonesian - Fluent</span><span>English - Intermediate</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey" id="journey">
+      <p class="eyebrow center" data-reveal>Career &amp; education path</p>
+      <h2 class="h2 center" data-reveal>My <em>journey</em> so far</h2>
+      <div class="legend" data-reveal>
+        <span class="t-edu">Education</span><span class="t-work">Work</span><span class="t-org">Organization</span><span
+          class="t-event">Event / Volunteer</span>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="tl-line"><i></i></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <p class="eyebrow" data-reveal>Selected work</p>
+      <h2 class="h2" data-reveal>Projects, <em>feature by feature</em></h2>
+      <p class="sub" data-reveal>Every project below comes with screenshots of each feature. Drag or use the arrows,
+        click any shot to enlarge.</p>
+      <div id="projectList"></div>
+    </section>
+
+    <!-- CREATIVE -->
+    <section class="section creative" id="creative">
+      <p class="eyebrow" data-reveal>Beyond code</p>
+      <h2 class="h2" data-reveal>Creative <em>playground</em></h2>
+
+      <div class="block" id="roblox">
+        <div class="block-head" data-reveal>
+          <h3>Roblox map</h3>
+          <p id="robloxDesc"></p>
+        </div>
+        <div class="grid roblox-grid" id="robloxGrid"></div>
+      </div>
+
+      <div class="block" id="design">
+        <div class="block-head" data-reveal>
+          <h3>Graphic design</h3>
+          <p>Instagram feeds, book covers, posters and banners.</p>
+        </div>
+        <div class="filters" id="designFilters"></div>
+        <div class="masonry" id="designGrid"></div>
+      </div>
+
+      <div class="block" id="video">
+        <div class="block-head" data-reveal>
+          <h3>Video edits</h3>
+          <p>Click a card to watch it on its platform.</p>
+        </div>
+        <div class="grid video-grid" id="videoGrid"></div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="section leadership" id="leadership">
+      <p class="eyebrow" data-reveal>Student leadership</p>
+      <h2 class="h2" data-reveal>Head of Advocacy &amp; Student Welfare, <em>HIMATIF UPNVY</em></h2>
+      <p class="sub" data-reveal>Programs I designed and coordinated (2026 – present).</p>
+      <div class="cards" id="programs"></div>
+    </section>
+
+    <!-- CV -->
+    <section class="section cv" id="cv">
+      <div class="cv-card" data-reveal>
+        <div>
+          <p class="eyebrow">Curriculum vitae</p>
+          <h2 class="h2">Want the <em>full story</em>?</h2>
+          <p>Education, experience, organizations and events - all in one page.</p>
+        </div>
+        <a href="assets/cv/Wini-Dimas-Muharromsyah-CV.pdf" class="btn primary magnetic" download>Download CV
+          <i>↓</i></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="eyebrow center" data-reveal>Contact</p>
+      <h2 class="h2 huge center" data-reveal>Let's build<br><em>something</em> together.</h2>
+      <a class="mail magnetic" href="mailto:winidimas992@gmail.com" data-reveal>winidimas992@gmail.com</a>
+      <div class="socials" data-reveal>
+        <a href="https://github.com/zxwray" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://instagram.com/windmsoke" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/@dms" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Wini Dimas Muharromsyah</span>
+    <a href="#home" class="top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
